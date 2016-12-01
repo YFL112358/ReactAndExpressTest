@@ -6,21 +6,19 @@ const ReactDOM = require('react-dom');
 
 const DemoTest = React.createClass({
 	getInitialState: function() {
-    return {
+		return {
 			selectState: 'initial'
 		};
   },
-
 	propTypes: {
-    bar: React.PropTypes.string
+		bar: React.PropTypes.string
   },
 
-  getDefaultProps: function() {
+	getDefaultProps: function() {
     return {
       bar: 'shareming'
     };
   },
-
 	render: function() {
 		const sceneRef = this;
 		const buttonNameList = ['initial', 'pending', 'applied'];
